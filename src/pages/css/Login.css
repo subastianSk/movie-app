@@ -1,0 +1,151 @@
+.loginPage {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/b8e09d9c-d1e7-4800-afd9-810e41ace684/8880c9e7-62d3-4cb3-9da1-8f020fd4fa37/IN-en-20210607-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginLogo__Navbar {
+  width: 100%;
+  /* height: 10vh; */
+  margin-left: 3rem;
+  display: flex;
+}
+
+.loginLogo {
+  width: 160px;
+  object-fit: contain;
+  position: relative;
+}
+
+.netflix__login {
+  width: 100%;
+  padding-top: 4rem;
+  /* height: 90vh; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.netflix__loginContainer {
+  width: 450px;
+  height: auto;
+  padding: 2rem 0.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 0.5rem; */
+}
+
+.netflix__loginContainer h1 {
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.netflix__loginContainer input {
+  width: 75%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #454545;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.rememberMe {
+  font-size: 0.85rem;
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+
+  /* align-items: center; */
+}
+
+.rememberMe p input {
+  padding-top: 2px;
+  margin-bottom: 0;
+}
+
+.netflix__loginContainer button {
+  width: 80%;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: red;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.login__extra {
+  margin-top: 3rem;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__extra p {
+  margin-bottom: 0.8rem;
+}
+
+.facebook_login {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(172, 169, 169);
+}
+
+.facebook__logo {
+  width: 1rem;
+}
+
+.signUp {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(172, 169, 169);
+  display: flex;
+}
+
+/* @media screen and (max-width: 1280px) {
+    .netflix__loginContainer {
+      width: 35%;
+    }
+  } */
+
+/* @media screen and (max-width: 950px) {
+    .netflix__loginContainer {
+      width: 48%;
+    }
+  } */
+
+@media screen and (max-width: 550px) {
+  .netflix__loginContainer {
+    width: 85%;
+  }
+
+  .loginLogo__Navbar {
+    justify-content: center;
+    margin: 0;
+  }
+}
