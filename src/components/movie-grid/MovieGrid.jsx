@@ -116,6 +116,15 @@ const MovieSearch = (props) => {
   );
 
   useEffect(() => {
+    console.log("from", history.location.state?.from);
+    console.log("to", history.location.pathname);
+
+    if (
+      history.location.state?.from &&
+      history.location.pathname !== history.location.state
+    ) {
+      setKeyword("");
+    }
     const enterEvent = (e) => {
       e.preventDefault();
       if (e.keyCode === 13) {

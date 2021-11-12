@@ -10,6 +10,10 @@ import MovieGrid from "../components/movie-grid/MovieGrid";
 const Catalog = () => {
   const { category } = useParams();
 
+  const refreshPage = () => {
+    window.location.reload(false);
+  };
+
   return (
     <>
       <PageHeader>

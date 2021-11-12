@@ -2,7 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import { useHistory } from "react-router-dom";
 import { Uselogged } from "../context/LoginContext";
-import "./css/Login.css";
+import "../assets/boxicons-2.0.7/css/Login.css";
 
 const Login = () => {
   const history = useHistory();

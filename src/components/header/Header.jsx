@@ -30,7 +30,9 @@ const Header = () => {
   const { pathname } = useLocation();
   const headerRef = useRef(null);
 
-  const active = headerNav.findIndex((e) => e.path === pathname);
+  const active = headerNav.findIndex((e) =>
+    e.path === "/" ? e.path == pathname : pathname.startsWith(e.path)
+  );
   const loginContext = Uselogged();
   headerNav[3].display = loginContext.state.logged == 0 ? "Login" : "Logout";
   console.log(headerNav[3].display);
@@ -62,7 +64,14 @@ const Header = () => {
         <ul className="header__nav">
           {headerNav.map((e, i) => (
             <li key={i} className={`${i === active ? "active" : ""}`}>
-              <Link to={e.path}>{e.display}</Link>
+              <Link
+                to={{
+                  pathname: e.path,
+                  state: { from: pathname }
+                }}
+              >
+                {e.display}
+              </Link>
             </li>
           ))}
         </ul>
